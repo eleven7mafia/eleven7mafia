@@ -1,0 +1,161 @@
+html {
+	font-size: 2.5em;
+}
+body {
+	padding: 25px;
+	text-align: center;
+}
+
+
+
+/* Wrapper */
+.icon-button {
+	background-color: white;
+	border-radius: 20px;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 1.3rem;
+	height: 2.6rem;
+	line-height: 2.6rem;
+	margin: 0 5px;
+	position: relative;
+	text-align: center;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+	width: 2.6rem;
+}
+
+/* Circle */
+.icon-button span {
+	border-radius: 0;
+	display: block;
+	height: 0;
+	left: 50%;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	-webkit-transition: all 0.3s;
+	   -moz-transition: all 0.3s;
+	     -o-transition: all 0.3s;
+	        transition: all 0.3s;
+	width: 0;
+}
+.icon-button:hover span {
+	width: 2.6rem;
+	height: 2.6rem;
+	border-radius: 20px;
+	margin: -1.3rem;
+}
+
+/* Icons */
+.icon-button i {
+	background: none;
+	color: white;
+	height: 2.6rem;
+	left: 0;
+	line-height: 2.6rem;
+	position: absolute;
+	top: 0;
+	-webkit-transition: all 0.3s;
+	   -moz-transition: all 0.3s;
+	     -o-transition: all 0.3s;
+	        transition: all 0.3s;
+	width: 2.6rem;
+	z-index: 10;
+}
+
+
+/*
+
+Twitter blue:  #63CCEE;
+Facebook blue:  #507ABD;
+Google+: #EB6B52;
+LinkedIn: #1086C8;
+Pinterest #F05F5C;
+
+*/
+
+
+.twitter {
+	background-color: rgba(64,153,255,.7);
+}
+.facebook  {
+	background-color: rgba(80,122,189,.7);
+}
+.google-plus {
+	background-color: rgba(219,90,60,.7);
+}
+.linkedin {
+	background-color: rgba(16,134,200,.7);
+}
+.pinterest {
+	background-color: rgba(203,32,39,.7);
+}
+
+
+/*HOVER*/
+
+.twitter span{
+	background-color: rgba(64,153,255,.7);
+}
+.facebook span {
+	background-color: rgba(80,122,189,.7);
+}
+.google-plus span {
+	background-color: rgba(219,90,60,.7); 
+}
+.linkedin span {
+	background-color: rgba(16,134,200,.7);
+}
+.pinterest span {
+	background-color: rgba(203,32,39,.7);
+}
+
+
+
+
+
+
+.icon-button:hover .icon-twitter,
+.icon-button:hover .icon-facebook,
+.icon-button:hover .icon-google-plus,
+.icon-button:hover .fa-tumblr,
+.icon-button:hover .fa-instagram,
+.icon-button:hover .fa-youtube,
+.icon-button:hover .fa-pinterest {
+	color: white;
+}
+
+@media all and (max-width: 680px) {
+  .icon-button {
+    border-radius: 1.6rem;
+    font-size: 0.8rem;
+    height: 1.6rem;
+    line-height: 1.6rem;
+    width: 1.6rem;
+  }
+
+  .icon-button:hover span {
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 1.6rem;
+    margin: -0.8rem;
+  }
+
+  /* Icons */
+  .icon-button i {
+	  height: 1.6rem;
+	  line-height: 1.6rem;
+	  width: 1.6rem;
+  }
+  body {
+
+	  padding: 10px;
+  }
+  .pinterest {
+   display: none; 
+  }
+
+}
